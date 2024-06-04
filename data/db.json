@@ -1,0 +1,851 @@
+{
+    "mnemonic-words": {
+        "1": {
+            "dictionary": "I",
+            "transcription": "ay",
+            "translation": "men",
+            "association": "ayiq",
+            "dependentCondition": "Tasavvur qiling, ayiq barchani oldiga chiqib olib: 'Men, men, men' deb baqiryapti."
+        },
+        "2": {
+            "dictionary": "You",
+            "transcription": "yu",
+            "translation": "sen, siz",
+            "association": "yurak",
+            "dependentCondition": "Tasavvur qiling, yuragingiz: 'Sizni sevaman' deb olamdan ko'z yummoqda, bechora!!!"
+        },
+        "3": {
+            "dictionary": "We",
+            "transcription": "ui",
+            "translation": "biz",
+            "association": "Uilyam Shekspir",
+            "dependentCondition": "Uilyam Shekspimi Tasavvur qilamiz, u hammaning oldiga chiqib: 'O'lmoq yo tirik qolmoq, bizning masalamiz' deb o'kiryapti."
+        },
+        "4": {
+            "dictionary": "He",
+            "transcription": "hi",
+            "translation": "u",
+            "association": "Hid",
+            "dependentCondition": "Tasavvur qiling, qandaydir yomon hid chiqyapti, siz do'stlaringiz ichidasiz, bir-biringizga qarayapsizda, oldingizda turgan botanikni ko'rsatib: 'U qildi' deyapsiz."
+        },
+        "5": {
+            "dictionary": "She",
+            "transcription": "shi",
+            "translation": "u",
+            "association": "Shim",
+            "dependentCondition": "Tasavvur qiling, bir qiz shim kiyib ketmoqda va u haqida g'iybat qilib ketmoqdasiz."
+        },
+        "6": {
+            "dictionary": "It",
+            "transcription": "it",
+            "translation": "u",
+            "association": "It",
+            "dependentCondition": "Yosh bola sizdan 'u nima?' deb itni ko'rsatib so'rayapti. Siz 'u it' deb tushuntiryapsiz."
+        },
+        "7": {
+            "dictionary": "They",
+            "transcription": "dey",
+            "translation": "ular",
+            "association": "doya",
+            "dependentCondition": "Bir to'da doyalar turibdi, siz ko'rsatkich barmog'ingiz bilan ulami ko'rsatib: 'Ular doyalar' deyapsiz."
+        },
+        "8": {
+            "dictionary": "What",
+            "transcription": "uot",
+            "translation": "nima, qanday",
+            "association": "Uotson",
+            "dependentCondition": "Doktor Uotson doim Sherlok Xolmsga bo'lmag'ur nima, qanday savollarini berayotganini Tasavvur qiling."
+        },
+        "9": {
+            "dictionary": "Who",
+            "transcription": "hu",
+            "translation": "kim",
+            "association": "hur",
+            "dependentCondition": "Do'stingiz bir hur-parini sevib qoldi, siz undan uni kimligi haqida so'rayapsiz."
+        },
+        "10": {
+            "dictionary": "Where",
+            "transcription": "ueya",
+            "translation": "qayerga, qayerda",
+            "association": "Uy",
+            "dependentCondition": "Uyingizda oldida turibsizu, lekin qayerdaligini bilmayapsiz."
+        },
+        "11": {
+            "dictionary": "How",
+            "transcription": "hau",
+            "translation": "qanday",
+            "association": "Haus",
+            "dependentCondition": "Tasavvur qiling, Doktor Haus bilan operatsiya bo'lyapti, kimdir tinimsiz 'qanday, qanday' deb savol beryapti."
+        },
+        "12": {
+            "dictionary": "Why",
+            "transcription": "uay",
+            "translation": "nega",
+            "association": "Vay-vay",
+            "dependentCondition": "Jasur Umirov o'zidan o'zi ko'chada 'Vay-vay' deb qo'shiq aytib ketyapti, uni ko'rganlar bir-birlariga 'nega, nega' deb hayratlanishyapti."
+        },
+        "13": {
+            "dictionary": "When",
+            "transcription": "uen",
+            "translation": "qachon",
+            "association": "Ventilyator",
+            "dependentCondition": "Ventilyator qachon so'zini eshitishi bilan to'xtab qolyapti, yana bir marta qachon so'zini eshitgach ishlab ketyapti."
+        },
+        "14": {
+            "dictionary": "My",
+            "transcription": "may",
+            "translation": "mening",
+            "association": "Maya",
+            "dependentCondition": "Maya qabilasi aholisi hamma narsani o'zlashtirib oldi, 'meniki, mening' so'zini ko'p ishlatishyapti, yaxshi emas!!!!!!!"
+        },
+        "15": {
+            "dictionary": "Your",
+            "transcription": "yor",
+            "translation": "sening, sizning",
+            "association": "yor",
+            "dependentCondition": "Ikkita do'st bir-biri bilan yor talashyapti, 'sening-sizning' deb hammayog'ni bozor qilib yuborishdi."
+        },
+        "16": {
+            "dictionary": "His",
+            "transcription": "his",
+            "translation": "uning",
+            "association": "His",
+            "dependentCondition": "Bashoratchi Vanga sizga qarab 'uning his qilishi juda kuchli' deyapti, rostdan shundaymi???"
+        },
+        "17": {
+            "dictionary": "Her",
+            "transcription": "hyor",
+            "translation": "uning",
+            "association": "Hayol",
+            "dependentCondition": "Yana Vangani ishga solamiz. Endi u bir qizga qarayaptida: 'Uning hayollari juda qo'rqinchli' deb aytyapti."
+        },
+        "18": {
+            "dictionary": "Its",
+            "transcription": "its",
+            "translation": "uning",
+            "association": "Bits",
+            "dependentCondition": "Shag bits naushniklar taqib musiqa eshitib yurishibdi, yosh bolalar yig'lashyapti 'uning naushnigi bor, meniki yo'q' deb."
+        },
+        "19": {
+            "dictionary": "Our",
+            "transcription": "aur",
+            "translation": "bizning",
+            "association": "Aura",
+            "dependentCondition": "Psixologlar maqtanib o'tirishibdi, bizning auramiz kuchli, deb."
+        },
+        "20": {
+            "dictionary": "Their",
+            "transcription": "deir",
+            "translation": "ularning",
+            "association": "Sayr",
+            "dependentCondition": "Ota-onalar havotirlanib o'tirishibdi, ikki yoshni sayohat chiqarib yuborishgan, endi ularning sayrlari uzoqqa cho'zildi, deb o'tirishibdi."
+        },
+        "21": {
+            "dictionary": "Cat",
+            "transcription": "ket",
+            "translation": "mushuk",
+            "association": "Ketmon",
+            "dependentCondition": "Tasavvur qiling, mushuk yelkasiga ketmonni tashlab olib, dalada yuribdi."
+        },
+        "22": {
+            "dictionary": "Dog",
+            "transcription": "dog",
+            "translation": "it, kuchuk",
+            "association": "Doka",
+            "dependentCondition": "Kuchuk akkillayverganidan, og'zini doka bilan bog'lab qo'ydingiz. Qanday vahshiylik!"
+        },
+        "23": {
+            "dictionary": "Bird",
+            "transcription": "byord",
+            "translation": "qush",
+            "association": "Bort",
+            "dependentCondition": "Kema bortida qushlar o'lib yotibdi, bu yomonlik alomati!"
+        },
+        "24": {
+            "dictionary": "Squirrel",
+            "transcription": "skuirel",
+            "translation": "olmaxon",
+            "association": "Skver",
+            "dependentCondition": "Skverda olmaxonlar qo'l ushlashib, sayr qilib yurishibdi. Bu chinakam dahshat!"
+        },
+        "25": {
+            "dictionary": "Wolf",
+            "transcription": "uolf",
+            "translation": "bo'ri",
+            "association": "Golf",
+            "dependentCondition": "Bir gala bo'rilar yig'ilib olib, golf o'ynashmoqda. Tavba, barcha hayvonlar odamiylashib ketishmoqda, qanday zamonlarga qoldik!"
+        },
+        "26": {
+            "dictionary": "Goose",
+            "transcription": "gus",
+            "translation": "g'oz",
+            "association": "Gus",
+            "dependentCondition": "G'oz rus tilida gus deyiladi, buni eslab qolish oson."
+        },
+        "27": {
+            "dictionary": "Giraffe",
+            "transcription": "jiraf",
+            "translation": "jirafa",
+            "association": "Jirafa",
+            "dependentCondition": "Bu yerda birgina 'a' harfini olib tashlasangiz bas."
+        },
+        "28": {
+            "dictionary": "Rabbit",
+            "transcription": "rebbit",
+            "translation": "quyon",
+            "association": "Robot",
+            "dependentCondition": "Robot quyonlar sizni o'rab olgan, endi qochib bo'psiz©©©"
+        },
+        "29": {
+            "dictionary": "Cow",
+            "transcription": "kau",
+            "translation": "sigir",
+            "association": "Kal",
+            "dependentCondition": "Kal odam sigirini sochini olayotganini tasavvur qiling. Bu chinakam hasaddan nishona!"
+        },
+        "30": {
+            "dictionary": "Rat",
+            "transcription": "ret",
+            "translation": "kalamush",
+            "association": "Rediska",
+            "dependentCondition": "Katta kalamush kichkina rediskani yeb, bo'kib qoldi. Hayratlanarli joy? yo'q!"
+        },
+        "31": {
+            "dictionary": "Fox",
+            "transcription": "foks",
+            "translation": "tulki",
+            "association": "Fokus",
+            "dependentCondition": "Tulki sirkda turli xil fokuslar ko'rsatyapti. San'atiga qoil!"
+        },
+        "32": {
+            "dictionary": "Horse",
+            "transcription": "hors",
+            "translation": "ot",
+            "association": "Mors",
+            "dependentCondition": "Issiq daladan charchab kelgan ot, muzdek mors ichib dam olib o'tiribdi."
+        },
+        "33": {
+            "dictionary": "Frog",
+            "transcription": "frog",
+            "translation": "qurbaqa",
+            "association": "Tvorog",
+            "dependentCondition": "Tasavvur qiling, tvorog yeb o'tiribsiz, shunda birdan ichidan qurbaqa otilib chiqdi."
+        },
+        "34": {
+            "dictionary": "Mouse",
+            "transcription": "maus",
+            "translation": "sichqon",
+            "association": "Klaus",
+            "dependentCondition": "Santa Klaus sizga sovg'a sifatida katta sichqonni tashlab ketdi, xursand bo Ting, muhimi tashlab ketdiku, tashlab ketmasligi ham mumkin ediku!"
+        },
+        "35": {
+            "dictionary": "Monkey",
+            "transcription": "manki",
+            "translation": "maymun",
+            "association": "Lanka",
+            "dependentCondition": "Tasavvur qiling, maymun lanka o'ynayapti, qolganlar tomosha qilyapti. Hayratlanarlisi, bir soatdan buyon oyog'idan tushurmayapti."
+        },
+        "36": {
+            "dictionary": "Pig",
+            "transcription": "pig",
+            "translation": "cho'chqa",
+            "association": "Pik",
+            "dependentCondition": "Cho'chqa och qolgan, chiyillashni va xurillashni pikiga chiqqan, bechora!!!"
+        },
+        "37": {
+            "dictionary": "Elephant",
+            "transcription": "elifent",
+            "translation": "fil",
+            "association": "Elflar",
+            "dependentCondition": "Elflar filni ustiga chiqib olib, uni qiynab minib yurishibdi."
+        },
+        "38": {
+            "dictionary": "Duck",
+            "transcription": "dak",
+            "translation": "o'rdak",
+            "association": "Dak",
+            "dependentCondition": "O'rdak so'zini inglizlar bizdan olishgan. '0'r'ni olib tashlasangiz, dak qoladi©©"
+        },
+        "39": {
+            "dictionary": "Bread",
+            "transcription": "bred",
+            "translation": "non",
+            "association": "Brend",
+            "dependentCondition": "Nonlar hamma joyda tugadi. Endi non yopuvchilar brend darajasiga chiqdi."
+        },
+        "40": {
+            "dictionary": "Butter",
+            "transcription": "batte",
+            "translation": "saryog'",
+            "association": "Latte",
+            "dependentCondition": "Kafe latteni ichiga sariyog' qo'shib ichishyapti, bu dahshat, ishtaham bo'g'ildi."
+        },
+        "41": {
+            "dictionary": "Oil",
+            "transcription": "oil",
+            "translation": "yog'",
+            "association": "qoil",
+            "dependentCondition": "Bir yigit butun boshli ikki litr yog'ni ichib yubordi, hamma qoil qoldi, faqat men emas. Yana ishtaham bo'g'ildi."
+        },
+        "42": {
+            "dictionary": "Cheese",
+            "transcription": "chiz",
+            "translation": "pishloq",
+            "association": "Chizzz",
+            "dependentCondition": "Bu so'zni hamma biladi, deb hisoblayman. Sur'atga tushganda hamma chizzzzzz, deydi."
+        },
+        "43": {
+            "dictionary": "Sausage",
+            "transcription": "sosij",
+            "translation": "kolbasa",
+            "association": "Sosiska",
+            "dependentCondition": "Fikrlab ko'ring, aziz do'stim, sosiska so'zi qaysi tildan olingan?"
+        },
+        "44": {
+            "dictionary": "Ham",
+            "transcription": "hem",
+            "translation": "vetchina (cho'chqa go'shti)",
+            "association": "ham",
+            "dependentCondition": "Yangi pishirilgan vetchinani olib kelishdi, siz ham etib, barchasini yutib yubordingiz."
+        },
+        "45": {
+            "dictionary": "Meat",
+            "transcription": "mit",
+            "translation": "go'sht",
+            "association": "Hit",
+            "dependentCondition": "Bir parcha go'sht hit qo'shiqlar aytib mashhur bo'Hb ketdi, slzni nazarda tutmadim!"
+        },
+        "46": {
+            "dictionary": "Beef",
+            "transcription": "bif",
+            "translation": "mol go'shti",
+            "association": "Mif",
+            "dependentCondition": "Mol go'shti juda kir bo'lib ketgan, siz Mif poroshogini solib, yuvyapsiz. Yaxshi ideya!"
+        },
+        "47": {
+            "dictionary": "Lamb",
+            "transcription": "lemb",
+            "translation": "qo'y go'shti",
+            "association": "Lampa",
+            "dependentCondition": "Uyda lampa qolmagan, o'miga qo'y go'shtini ilib chiqyapsiz."
+        },
+        "48": {
+            "dictionary": "Chicken",
+            "transcription": "chikin",
+            "translation": "jo'ja",
+            "association": "Chik",
+            "dependentCondition": "Chick nomli tabakalardan yeganmisiz, ayni shu so'zni jo'ja so'ziga ulab keting."
+        },
+        "49": {
+            "dictionary": "Cutlet",
+            "transcription": "katlet",
+            "translation": "kotlet",
+            "association": "Katlet",
+            "dependentCondition": "Bu so'zlar o'xshash."
+        },
+        "50": {
+            "dictionary": "Fish",
+            "transcription": "fish",
+            "translation": "baliq",
+            "association": "Tish",
+            "dependentCondition": "Baliqni ycb turgan vaqtida, biron kishini tishini sindirib oldi. Rosa og'rigan bo'Isa kerak."
+        },
+        "51": {
+            "dictionary": "Egg",
+            "transcription": "egg",
+            "translation": "tuxum",
+            "association": "Ek",
+            "dependentCondition": "Tasavvur qiling, dalaga chiqib olib, tuxum ekyapsiz. Umid qilyapsizki, oltin tuxum o'sib chiqadi, deb."
+        },
+        "52": {
+            "dictionary": "Salad",
+            "transcription": "seled",
+            "translation": "salat",
+            "association": "Salad",
+            "dependentCondition": "Bu o'xshash so'z."
+        },
+        "53": {
+            "dictionary": "Mushroom",
+            "transcription": "mashrum",
+            "translation": "qo'ziqorin",
+            "association": "Mashhur",
+            "dependentCondition": "Qo'ziqorin jasoratlar ko'rsatib, mashhurlikka erishdi. Endi u yulduz."
+        },
+        "54": {
+            "dictionary": "Corn",
+            "transcription": "korn",
+            "translation": "don",
+            "association": "Qorin",
+            "dependentCondition": "Tasavvur qiling, qarshingizda odam, qomi o'miga donlar o'sib chiqqan."
+        },
+        "55": {
+            "dictionary": "Porridge",
+            "transcription": "porij",
+            "translation": "bo'tqa",
+            "association": "Parij",
+            "dependentCondition": "Parij shahriga bo'tqa yoqqani haqida eshitdingizmi? Eshitmadingizmi? Unda intemetdan qidirib ко'ring."
+        },
+        "56": {
+            "dictionary": "Soup",
+            "transcription": "sup",
+            "translation": "sho'rva",
+            "association": "Sup",
+            "dependentCondition": "Ruscha sup so'ziga o'xshatsak bo'ladi."
+        },
+        "57": {
+            "dictionary": "Sandwich",
+            "transcription": "sendvich",
+            "translation": "buterbrod",
+            "association": "Sendvich",
+            "dependentCondition": "Buni hamma biladi."
+        },
+        "58": {
+            "dictionary": "Rice",
+            "transcription": "rays",
+            "translation": "guruch",
+            "association": "Mayz",
+            "dependentCondition": "Sizga guruch o'miga mayz solib berishyapti. Endi oshni ham guruchsiz, faqat mayz bilan qilasiz."
+        },
+        "59": {
+            "dictionary": "Noodles",
+            "transcription": "nudlz",
+            "translation": "lapsha",
+            "association": "Nadal",
+            "dependentCondition": "Mashhur tennis o'yinchisi Rafael Nadal lapsha yeb o'tirganini Tasavvur qiling."
+        },
+        "60": {
+            "dictionary": "Flour",
+            "transcription": "flur",
+            "translation": "un",
+            "association": "Blur",
+            "dependentCondition": "Blur o'yinini un ustida o'tirib o'ynayotganingizni Tasavvur qiling."
+        },
+        "61": {
+            "dictionary": "Spice",
+            "transcription": "spays",
+            "translation": "dorivor",
+            "association": "Spitsa",
+            "dependentCondition": "Velosiped spitsalarida dorivorlar ilinib turganini Tasavvur qiling."
+        },
+        "62": {
+            "dictionary": "Pepper",
+            "transcription": "peppe",
+            "translation": "qalampir",
+            "association": "Pepe",
+            "dependentCondition": "Mashhur futbolchi Pepe qalampir yeb, stadionga chiqyapti."
+        },
+        "63": {
+            "dictionary": "Salt",
+            "transcription": "solt",
+            "translation": "tuz",
+            "association": "Bolt",
+            "dependentCondition": "Tuzga botirib boltlami yeganmisiz? Yemagan bo'lsangiz, yeb ko'ring, juda mazali."
+        },
+        "64": {
+            "dictionary": "Onion",
+            "transcription": "onion",
+            "translation": "piyoz",
+            "association": "Poni",
+            "dependentCondition": "Tasavvur qiling, Poni ot hashak o'miga piyoz yeyapti."
+        },
+        "65": {
+            "dictionary": "Garlic",
+            "transcription": "galik",
+            "translation": "sarimsoq",
+            "association": "Karlik",
+            "dependentCondition": "Karliklar ya'ni pakanalar sarimsoq yeb, qorin to' yg' azishmoqda."
+        },
+        "66": {
+            "dictionary": "Sauce",
+            "transcription": "sos",
+            "translation": "sous",
+            "association": "Sous",
+            "dependentCondition": "Bir xil so'zlar."
+        },
+        "67": {
+            "dictionary": "Impassive",
+            "transcription": "impessiv",
+            "translation": "beparvo, loqayd",
+            "association": "Passiv",
+            "dependentCondition": "Passiv odam beparvolik qilib mashinani stolbaga qattiq urib oldi"
+        },
+        "68": {
+            "dictionary": "Impartial",
+            "transcription": "impash",
+            "translation": "xolis, odil",
+            "association": "Pashsha",
+            "dependentCondition": "Pashsha sizga katta qoshiqda xolisona ovqat edirmoqda"
+        },
+        "69": {
+            "dictionary": "Impair vision",
+            "transcription": "impea vijn",
+            "translation": "ko'rishni yomonlashtiradi",
+            "association": "Imperiya, Vijdon",
+            "dependentCondition": "Imperiya qiroli vijdoniga qarshi bordi va korishi yomonlashdi shunda u narsalarni ikkata bolib kora boshladi"
+        },
+        "70": {
+            "dictionary": "Immoral",
+            "transcription": "immo'rl",
+            "translation": "beodob, axloqsiz",
+            "association": "Immorat",
+            "dependentCondition": "Bir axloqsiz odam immoratni buzmoqchi bolyapti"
+        },
+        "71": {
+            "dictionary": "Immobility",
+            "transcription": "imoubiliti",
+            "translation": "harakatsizlik",
+            "association": "Mobilniy",
+            "dependentCondition": "Sizning mobilniy telefoningizga jon kirdi va sizni harakatsiz qilib qoydi"
+        },
+        "72": {
+            "dictionary": "Illustrious",
+            "transcription": "ilastrius",
+            "translation": "taniqli, mashhur",
+            "association": "Elastik",
+            "dependentCondition": "Bir mashhur odam elastikdek chozilib harakat qilyapti"
+        },
+        "73": {
+            "dictionary": "Illiterate",
+            "transcription": "illitireyt",
+            "translation": "savodsiz, o'qimagan",
+            "association": "Literatura",
+            "dependentCondition": "Sizni literature kitobi bilan sen savodsizsan deb qattiq urishyabti"
+        },
+        "74": {
+            "dictionary": "Ignoble",
+            "transcription": "ignoubl",
+            "translation": "razil, ablax",
+            "association": "Igna, Nobel",
+            "dependentCondition": "Bir razil ignani Nobelga sanchib oldi"
+        },
+        "76": {
+            "dictionary": "ID card",
+            "transcription": "ay di: ka:d",
+            "translation": "shaxsni tasdiqlovchi hujjat",
+            "association": "Aydi kard",
+            "dependentCondition": "Ishxonaga aydi kard, yani shaxsni tasdiqlovchi hujjatni korsatib kiryapsiz"
+        },
+        "77": {
+            "dictionary": "Hypocrisy",
+            "transcription": "haypokrisi",
+            "translation": "ikkiyuzlamachilik, riyokorlik",
+            "association": "Gippokrat",
+            "dependentCondition": "Shifokorlar Gippokratga biz ikkiyuzlamachilik qilmaymiz deb baralla aytib so’z berishyapti"
+        },
+        "78": {
+            "dictionary": "Hygiene",
+            "transcription": "hayji:n",
+            "translation": "gigiyena, ozodalik (sog'liqni saqlashga doir amaliy choralar)",
+            "association": "Hayajon",
+            "dependentCondition": "Siz gigiyenaga amal qilmasdan stolni ustida burningizni ko'vlaganingiz uchun hayajonlanib o'tiribsiz"
+        },
+        "79": {
+            "dictionary": "Humble",
+            "transcription": "hambl",
+            "translation": "kamtar, oddiy, kamsuqum",
+            "association": "Hamburger",
+            "dependentCondition": "Siz kamtarlik qilib hamburgerni katta katta qilib og’zingizga solyapsiz"
+        },
+        "80": {
+            "dictionary": "Humankind",
+            "transcription": "hyumenkaynd",
+            "translation": "insoniyat",
+            "association": "Hammom kinder",
+            "dependentCondition": "Tentak insoniyat jamoasi kinderni hommomga kirib iste'mol qilyapti"
+        },
+        "81": {
+            "dictionary": "Humane",
+            "transcription": "hyumeyn",
+            "translation": "insonparvar, gumanitar",
+            "association": "Urmen",
+            "dependentCondition": "Insonparvar odam mani urmen deb baqiryapti"
+        },
+        "82": {
+            "dictionary": "Human resources (HR)",
+            "transcription": "hyumen risorses",
+            "translation": "inson xuquqlari",
+            "association": "Xurmo, so’rmoq",
+            "dependentCondition": "Siz xurmoni so’rib otiribsiz"
+        },
+        "83": {
+            "dictionary": "Human race",
+            "transcription": "hyuman reys",
+            "translation": "inson irqi",
+            "association": "Chuma, reys",
+            "dependentCondition": "Chuma kasalligini chaqiruvchi bakteriyalar samalyotga reysni kutib otirishibdi"
+        },
+        "84": {
+            "dictionary": "Huge",
+            "transcription": "hyuj",
+            "translation": "ulkan, buyuk, katta",
+            "association": "Hovuch",
+            "dependentCondition": "Ekskavator ulkan hovuchi bilan yer kovlamoqda"
+        },
+        "85": {
+            "dictionary": "Utmost",
+            "transcription": "atmoust",
+            "translation": "eng olis",
+            "association": "Atmosfera",
+            "dependentCondition": "Atmosfera eng olisdagi yulduz bilan urishib uni yerdan uchirib yubordi"
+        },
+        "86": {
+            "dictionary": "Steady",
+            "transcription": "stedi",
+            "translation": "mustahkam, doimiy, barqaror",
+            "association": "Istadi",
+            "dependentCondition": "Nemislar mustahkam devorni qurishni istadi"
+        },
+        "87": {
+            "dictionary": "Reside",
+            "transcription": "rzayd",
+            "translation": "istiqomat qilmoq, yashamoq",
+            "association": "Zaryad",
+            "dependentCondition": "Telefoningiz sizga zaryad berib jonlantirmoqda"
+        },
+        "88": {
+            "dictionary": "Reign",
+            "transcription": "rein",
+            "translation": "mamlakatda qirollik boshqaruvi",
+            "association": "Rayini qaytarmoq",
+            "dependentCondition": "It mushukni rayini qaytargani uchun rosa kaltak yeyapti"
+        },
+        "89": {
+            "dictionary": "Recession",
+            "transcription": "rseshn",
+            "translation": "mamlakat iqtisodiyoti yomon ahvoldagi davr",
+            "association": "Rus eshon",
+            "dependentCondition": "Tentak rus eshon mamlakat iqtisodiyoti yomon ahvoldagi davridan olib chiqish uchun reja o'ylabdi"
+        },
+        "90": {
+            "dictionary": "Progressive",
+            "transcription": "progresiv",
+            "translation": "taraqqiy etayotgan",
+            "association": "Progresiv",
+            "dependentCondition": "Progresiv harakatlar taraqqiyotga etaklar"
+        },
+        "91": {
+            "dictionary": "Outward",
+            "transcription": "autua:d",
+            "translation": "tashqarida, chetlashgan",
+            "association": "Avatar",
+            "dependentCondition": "Ko'm-ko'k avatar kelib tashqariga chiq urushasanmi deyapti"
+        },
+        "92": {
+            "dictionary": "Outlying",
+            "transcription": "autlaying",
+            "translation": "olis, yiroq",
+            "association": "Aut, laycha",
+            "dependentCondition": "Koptok autga chiqib ketganida it sizga ey laycha bor koptokni olib kel deyapti"
+        },
+        "93": {
+            "dictionary": "On the global scale",
+            "transcription": "o'n ze glo 'bl skeyl",
+            "translation": "global miqyosda",
+            "association": "Skelet, globus",
+            "dependentCondition": "Skelet sizga kulib turib globusni aylantirib otiribdi"
+        },
+        "94": {
+            "dictionary": "Nomad",
+            "transcription": "no'med",
+            "translation": "ko'chmanchi, daydi",
+            "association": "Nomard",
+            "dependentCondition": "Nomard daydi chiyabo'ri xotini tulkini rosa sokib uryapti"
+        },
+        "95": {
+            "dictionary": "Nation state",
+            "transcription": "neyshn steyt",
+            "translation": "mustaqil bo'lib turgan mamlakat",
+            "association": "Nishon steyk",
+            "dependentCondition": "Yuzta steykni yeganingiz uchun sizni nishon bilan taqdirlashmoqda"
+        },
+        "96": {
+            "dictionary": "National pride",
+            "transcription": "neyshnal prayd",
+            "translation": "milliy g'urur",
+            "association": "Nishon, spride",
+            "dependentCondition": "Prezident ko'p gazli ichimliklar ichganlarga spride napitka ko'krak nishonini bermoqda"
+        },
+        "97": {
+            "dictionary": "National symbol",
+            "transcription": "neyshnal simbl",
+            "translation": "milliy ramz",
+            "association": "Eyshel, simba",
+            "dependentCondition": "Eyshel palmasi oldida simba milliy ramz nishonini chizyapti"
+        },
+        "98": {
+            "dictionary": "Multilateral",
+            "transcription": "maltilateral",
+            "translation": "ikki va undan ortiq guruh / mamlakatlarning aralashuvidagi",
+            "association": "Latareya",
+            "dependentCondition": "Ikki va undan ortiq guruh latareyada pul yutib olib rosa mayishat qilyapti"
+        },
+        "99": {
+            "dictionary": "Multicultural",
+            "transcription": "maltikalchral",
+            "translation": "turli madaniyat / qarashlarni o'z ichiga olgan",
+            "association": "Multik, kacheliya",
+            "dependentCondition": "Hozir bolalar multik ko'rishadi, ota-bobolarimiz vaqtida kacheliya uchib, madaniyatga e'tibor berar edik"
+        },
+        "100": {
+            "dictionary": "Structure",
+            "transcription": "strakcha",
+            "translation": "tuzilish, bino",
+            "association": "Traktorcha",
+            "dependentCondition": "Traktorcha qollari bilan binono qurib tashlayotgan ekan"
+        },
+        "101": {
+            "dictionary": "Stripe",
+            "transcription": "strayp",
+            "translation": "yo'l-yo'l chiziq",
+            "association": "Stroy",
+            "dependentCondition": "Bir guruh odamlar yo'l-yo'l chiziqga bir sarfga qator bolib yigildilar"
+        },
+        "102": {
+            "dictionary": "Storey",
+            "transcription": "sto:ri:",
+            "translation": "qavat",
+            "association": "Tor",
+            "dependentCondition": "Chumoli uyidagi qavatlar tor bo'ladi"
+        },
+        "103": {
+            "dictionary": "Store",
+            "transcription": "sto':r",
+            "translation": "univermag, do'kon 2) omborda saqlamoq, g'amlamoq, zaxira",
+            "association": "Dutor",
+            "dependentCondition": "Eski do'konni oldida dutor chalib o'tiribsiz"
+        },
+        "104": {
+            "dictionary": "Stoplights",
+            "transcription": "stoplayts",
+            "translation": "svetafo'rlar",
+            "association": "Stop, laycha",
+            "dependentCondition": "Svetafo'r oldida laycha kuchuklar stop deb mashinalarni to’xtatishyabti"
+        },
+        "105": {
+            "dictionary": "Staircase",
+            "transcription": "steakeys",
+            "translation": "zina, zina xonasi",
+            "association": "Stakan",
+            "dependentCondition": "To'yda stakanlarning jarang-jurungiga zinalar o'yinga tushib ketayapti"
+        },
+        "106": {
+            "dictionary": "Stairway",
+            "transcription": "steyauey",
+            "translation": "zinapoya, pog'ona",
+            "association": "Stroyka",
+            "dependentCondition": "Stroyka bolayotgan zinapoyadan chiqib ketayotganingizda birdan yeqilib tushdingiz"
+        },
+        "107": {
+            "dictionary": "Stake",
+            "transcription": "steyk",
+            "translation": "qoziq, 2) stolba",
+            "association": "Stoyka",
+            "dependentCondition": "Ko'priklar qurilishida stoykalardan qoziq sifatida foydalaniladi"
+        },
+        "108": {
+            "dictionary": "Sprawl walkable",
+            "transcription": "spro':l uo':kbl",
+            "translation": "shahardagi betartib qurilgan binolar orasidan yurib o'ta olish",
+            "association": "Supirib, ukki",
+            "dependentCondition": "Shahardagi betartib qurilgan binolar orasidan ukki supirib ota olyapti"
+        },
+        "109": {
+            "dictionary": "Shortcut",
+            "transcription": "shutkat",
+            "translation": "qisqa yo'l",
+            "association": "Shutka",
+            "dependentCondition": "Ortogingiz sizni qisqa yoldan oboraman deb sizga shutka, yani hazil ishlatdi"
+        },
+        "110": {
+            "dictionary": "Sewage",
+            "transcription": "su:ij",
+            "translation": "kanalizatsiya",
+            "association": "Svejiy",
+            "dependentCondition": "Kanalizatsiyadan svejiy suvni olib ichyapsiz"
+        },
+        "111": {
+            "dictionary": "Sector",
+            "transcription": "sekte",
+            "translation": "sektor, maydon",
+            "association": "Setka",
+            "dependentCondition": "Maydonda rosa kop setkalar uchib yuribdi"
+        },
+        "112": {
+            "dictionary": "Seashore",
+            "transcription": "si:sho:",
+            "translation": "sohil",
+            "association": "Shortik",
+            "dependentCondition": "Sohilda shortikda sayr qilib yuribsiz"
+        },
+        "113": {
+            "dictionary": "Seaport",
+            "transcription": "si:po:t",
+            "translation": "dengiz porti, port shahar",
+            "association": "Sipo",
+            "dependentCondition": "Dengiz portida sipo kelinlar aylinib yurishibdi"
+        },
+        "114": {
+            "dictionary": "Sanctuary",
+            "transcription": "sangkchueriy",
+            "translation": "havfsiz joy, panox topsa bo'ladigan hudud 2) muqaddas joy",
+            "association": "Sentr",
+            "dependentCondition": "Siz cho'lni sentriga borib olib muqaddas joylarni qidiryapsiz. Lekin yo'lingizda faqat hashoratlar bor"
+        },
+        "115": {
+            "dictionary": "Rural depopulation",
+            "transcription": "rurl depopuleyshn",
+            "translation": "qishloqdagi depopulyatsiya (aholining kamayishi)",
+            "association": "Rul, populyatsiya",
+            "dependentCondition": "Mashinada rulni boshqarolmaganingiz uchun qishloqning populyatsasini kamayishiga olib keldingiz"
+        },
+        "116": {
+            "dictionary": "Haughty",
+            "transcription": "ho'ti",
+            "translation": "dimog'dor, kekkaygan, manman",
+            "association": "Ho'tik",
+            "dependentCondition": "Kekkaygan ho'tik hangrayverganidan qorni yorilib ketdi"
+        },
+        "117": {
+            "dictionary": "Haste",
+            "transcription": "heyst",
+            "translation": "shoshma-shosharlik, tezlashtirmoq",
+            "association": "Hasta",
+            "dependentCondition": "Keksa buvining hastaligi sababli shoshma-shosharlik bilan nabirasinig to’yini tezlashtirib yuborishdi"
+        }
+    },
+    "mnemonic-faces": {
+        "1": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=24&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2F06%2F5a%2F54065a6cc04a62dd21cd871ebeda29e5.jpg&lr=10335",
+            "fullName": "Odilxon"
+        },
+        "2": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=30&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2F2800_opt_1%2Fceacc659994765.5a37c9cd5f3ac.jpg&lr=10335",
+            "fullName": "Umarali"
+        },
+        "3": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=31&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fscontent-arn2-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2F121053214_362794711737465_7563272332097715297_n.jpg%3F_nc_ht%3Dscontent-arn2-1.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DVwc1ql_tQ8gAX86t02x%26_nc_tp%3D18%26oh%3Dde5ab72f8f01b892d0ca828d5051c7a6%26oe%3D5FAE8F6C&lr=10335",
+            "fullName": "Qodir"
+        },
+        "4": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=15&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fimage.winudf.com%2Fv2%2Fimage1%2FY29tLmZhc2hiZWxsOTY2Lmhhc2FuLmZhc2hiZWxscHJvMzA1NV9zY3JlZW5fNl8xNTU5OTc0ODg1XzA4NA%2Fscreen-6.jpg%3Ffakeurl%3D1%26type%3D.jpg&lr=10335",
+            "fullName": "Shokir"
+        },
+        "5": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=16&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fgagaru.club%2Fuploads%2Fposts%2F2023-02%2F1676187371_gagaru-club-p-prekrasnaya-ulibka-pinterest-76.jpg&lr=10335",
+            "fullName": "Olim"
+        },
+        "6": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=8&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fscontent-hel3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F278861274_315601460713008_9217898633769777853_n.jpg%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dscontent-hel3-1.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3D17KuC58KUB8AX_sv5oh%26edm%3DABfd0MgBAAAA%26ccb%3D7-4%26oh%3D00_AT_00Mn1Hbd3bnnqJ0PLnI-em6S9O3paOc4kQIC_v6WDtA%26oe%3D626F6F87%26_nc_sid%3D7bff83&lr=10335",
+            "fullName": "Muslim"
+        },
+        "7": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=2&text=person+image&pos=19&isize=eq&rpt=simage&img_url=https%3A%2F%2Fwww.theplace2.ru%2Farchive%2Fselena_gomez%2Fimg%2F66%281%29.jpg&lr=10335",
+            "fullName": "Hoshim"
+        },
+        "8": {
+            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=2&text=person+image&pos=11&isize=eq&rpt=simage&img_url=https%3A%2F%2Fcelebs-place.com%2Fgallery%2Fjensen-ackles%2F01~66.jpg&lr=10335",
+            "fullName": "Dilbar"
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+  @keyframes moveDown {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(3600deg);
+    }
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(100vw) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100vw) rotate(3600deg);
+    }
+  }
+  
+  
+  .animate-move-down {
+    animation: moveDown 60s linear infinite;
+    animation-direction: alternate;
+  }
+  
+  .animate-move-left {
+    animation: moveLeft 60s linear infinite;
+    animation-direction: alternate;
+  }
+  
+  
