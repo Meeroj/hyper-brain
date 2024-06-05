@@ -27,8 +27,7 @@ import CheckFace from './pages/training/face-and-name/check-face.tsx'
 import RandomCard from './pages/training/card/random-card.tsx'
 import UserInputCard from './pages/training/card/user-input-card.tsx'
 import CheckCard from './pages/training/card/check-card.tsx'
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+
 
 const router = createBrowserRouter([
   {
@@ -160,9 +159,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
      <ThemeProvider>
       <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <DndProvider backend={HTML5Backend}>
         <RouterProvider router={router}/>
-      </DndProvider>
       </ClerkProvider>
      </ThemeProvider>
   </Provider>
