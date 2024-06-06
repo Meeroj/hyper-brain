@@ -30,22 +30,7 @@ import CheckCard from './pages/training/card/check-card.tsx'
 import RandomDate from './pages/training/date/random-date.tsx'
 import UserInputDate from './pages/training/date/user-input-date.tsx'
 import CheckDate from './pages/training/date/check-date.tsx'
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDvPB_g2by5UegilbOOgfjnxZqyL1u86Go",
-  authDomain: "hyper-brain.firebaseapp.com",
-  projectId: "hyper-brain",
-  storageBucket: "hyper-brain.appspot.com",
-  messagingSenderId: "239644096901",
-  appId: "1:239644096901:web:03ba3562536885874aacec",
-  measurementId: "G-F0GG5R2CK0"
-};
-
-firebase.initializeApp(firebaseConfig);
+import './firebaseConfig.ts'
 
 const router = createBrowserRouter([
   {

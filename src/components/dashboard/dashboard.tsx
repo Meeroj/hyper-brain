@@ -1,12 +1,12 @@
 import { Component } from "react";
 import Chart from "react-apexcharts";
 import RadialBarChart from "./circular-progress";
+import FirebaseDataFetcher from "@/firebase/FirebaseDataFetcher";
 
 class DashboardLayout extends Component {
   constructor(props) {
     super(props);
-    const numbers = Array.from({length: 30}, (_, i) => i + 1);
-    console.log(numbers);
+    const numbers = Array.from({ length: 30 }, (_, i) => i + 1);
 
     this.state = {
       options: {
@@ -21,15 +21,33 @@ class DashboardLayout extends Component {
       series: [
         {
           name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91, 32, 44, 76, 84, 91, 65, 44, 76, 84, 60, 70, 91, 32, ]
+          data: [] // Initially empty, will be filled with fetched data
         }
-      ]
+      ],
+      fetchedData: null
     };
   }
+
+  handleFetchData = (data) => {
+    // Parse the fetched data to get the series data
+    const seriesData = Object.values(data.correctNumbers).flat();
+    
+    // Update the state with fetched data
+    this.setState({
+      series: [
+        {
+          name: "series-1",
+          data: seriesData
+        }
+      ],
+      fetchedData: data
+    });
+  };
 
   render() {
     return (
       <div className="flex gap-10">
+        <FirebaseDataFetcher onFetch={this.handleFetchData} />
         <div className="row">
           <div className="mixed-chart">
             <Chart
@@ -42,9 +60,9 @@ class DashboardLayout extends Component {
           </div>
         </div>
         <div className="w-1/4 ms-2 p-2 rounded-md border border-slate-500/20 ">
-            <RadialBarChart label="Words" progress={87}/>
-            <RadialBarChart label="Numbers" progress={76}/>
-            <RadialBarChart label="Cards" progress={68}/>
+          <RadialBarChart label="Words" progress={87} />
+          <RadialBarChart label="Numbers" progress={76} />
+          <RadialBarChart label="Cards" progress={68} />
         </div>
       </div>
     );
@@ -52,3 +70,4 @@ class DashboardLayout extends Component {
 }
 
 export default DashboardLayout;
+
