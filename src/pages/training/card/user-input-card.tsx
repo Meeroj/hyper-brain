@@ -1,10 +1,9 @@
-import DragComponent from "../Drag/drag-component";
 
 const UserInputCard = () => {
 
 
   return (
-   <DragComponent/>
+    <></>
   );
 };
 

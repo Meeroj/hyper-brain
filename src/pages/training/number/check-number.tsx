@@ -30,7 +30,7 @@ export default function CheckNumber() {
           {userInputNumbers.map((el, index) => (
             <p
               key={index}
-              className={`w-[25px] h-[25px] remove-arrow outline-none focus:border focus:border-amber-400 text-center text sm:my-2 border rounded-full cursor-pointer ${el === "" && ' opacity-40'} ${
+              className={`w-[25px] h-[25px] remove-arrow outline-none focus:border focus:border-amber-400 text-center text sm:my-2 border rounded-full cursor-pointer ${el.toString() === "" && ' opacity-40'} ${
                 el.toString() !== "" && Number(el) === Number(randomNumbers[index])
                   ? "text-green-500 border-green-500"
                   : "text-rose-500 border-rose-500 hover:border-amber-400 hover:text-amber-700 hover:opacity-100"

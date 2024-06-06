@@ -4,8 +4,8 @@ import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
 
 interface FirebaseDataSenderProps {
-  userInputNumbers: string[];
-  randomNumbers: string[];
+  userInputNumbers: number[];
+  randomNumbers: number[];
 }
 
 const FirebaseDataSender: React.FC<FirebaseDataSenderProps> = ({ userInputNumbers, randomNumbers }) => {
