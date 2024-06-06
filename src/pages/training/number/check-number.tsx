@@ -10,7 +10,7 @@ export default function CheckNumber() {
   const navigate = useNavigate()
   
   const handleBack = ()=>{
-    navigate(-3)
+    navigate(-1)
   }
 
   return (
@@ -22,11 +22,11 @@ export default function CheckNumber() {
           {userInputNumbers.map((el: React.ReactNode, index: number) => (
             <p
               key={index}
-              className={`w-[25px] remove-arrow outline-none focus:border focus:border-amber-400 text-center text sm:my-2 border rounded-full cursor-pointer ${
+              className={`w-[25px] h-[25px] remove-arrow outline-none focus:border focus:border-amber-400 text-center text sm:my-2 border rounded-full cursor-pointer ${el==''&&' opacity-40'} ${
                 el != "" && Number(el) === Number(randomNumbers[index])
                   ? "text-green-500 border-green-500"
-                  : "text-rose-500 border-rose-500 hover:border-amber-400 hover:text-amber-400"
-              } ${el==''&&' opacity-40'}
+                  : "text-rose-500 border-rose-500 hover:border-amber-400 hover:text-amber-700 hover:opacity-100"
+              } 
               `}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}

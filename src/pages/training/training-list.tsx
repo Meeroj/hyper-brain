@@ -56,6 +56,14 @@ export const TrainingList = () => {
     navigate('/dashboard/training/card/read');
   }
 
+  const handleStartHistoryDate = ()=>{
+    dispatch(processPending({
+      systemTime: time && time,
+      system: systemValue ? systemValue : 2
+    }));
+    navigate('/dashboard/training/date/read');
+  }
+
   return (
     <div className="p-4 mx-auto overflow-auto h-screen">
       <Outlet/>
@@ -238,7 +246,7 @@ export const TrainingList = () => {
             </form>
           </CardContent>
           <CardFooter className="flex justify-end">
-            <Button onClick={handleStartNumber}>Start</Button>
+            <Button onClick={handleStartHistoryDate}>Start</Button>
           </CardFooter>
         </Card>
       </div>

@@ -6,26 +6,31 @@ import { EffectCards } from 'swiper/modules';
 import { cardItems } from './mock-card-data';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import Clock from '@/components/clock/clcok';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/redux/store';
 
 interface CardItem {
   imageUrl: string;
   name: string;
 }
 
-function shuffleArray(array: CardItem[]): CardItem[] {
-  return array.sort(() => Math.random() - 0.5);
-}
-
-const randomCards = shuffleArray(cardItems);
 
 
 const RandomCard: React.FC = () => {
+  function shuffleArray(array: CardItem[]): CardItem[] {
+    return array.sort(() => Math.random() - 0.5);
+  }
+  const {systemTime} = useSelector((state: RootState) => state.training)
+  
+  const randomCards = shuffleArray(cardItems);
     const navigate = useNavigate()
     const handleFinish = ()=>{
-     navigate('/dashboard/training/card/user-input')
+     navigate('/dashboard/training/card/user-input', { replace: true })
     }
   return (
     <div className="flex h-screen">
+      <Clock route={'/dashboard/training/card/user-input'} time={systemTime}/>
       <div className="flex-grow flex flex-col justify-center items-center gap-10 p-4">
         <Swiper
           effect={'cards'}

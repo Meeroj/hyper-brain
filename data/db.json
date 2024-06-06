@@ -813,39 +813,507 @@
             "dependentCondition": "Keksa buvining hastaligi sababli shoshma-shosharlik bilan nabirasinig to’yini tezlashtirib yuborishdi"
         }
     },
-    "mnemonic-faces": {
-        "1": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=24&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2F06%2F5a%2F54065a6cc04a62dd21cd871ebeda29e5.jpg&lr=10335",
-            "fullName": "Odilxon"
-        },
-        "2": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=30&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2F2800_opt_1%2Fceacc659994765.5a37c9cd5f3ac.jpg&lr=10335",
-            "fullName": "Umarali"
-        },
-        "3": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=31&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fscontent-arn2-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2F121053214_362794711737465_7563272332097715297_n.jpg%3F_nc_ht%3Dscontent-arn2-1.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DVwc1ql_tQ8gAX86t02x%26_nc_tp%3D18%26oh%3Dde5ab72f8f01b892d0ca828d5051c7a6%26oe%3D5FAE8F6C&lr=10335",
-            "fullName": "Qodir"
-        },
-        "4": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=15&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fimage.winudf.com%2Fv2%2Fimage1%2FY29tLmZhc2hiZWxsOTY2Lmhhc2FuLmZhc2hiZWxscHJvMzA1NV9zY3JlZW5fNl8xNTU5OTc0ODg1XzA4NA%2Fscreen-6.jpg%3Ffakeurl%3D1%26type%3D.jpg&lr=10335",
-            "fullName": "Shokir"
-        },
-        "5": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=16&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fgagaru.club%2Fuploads%2Fposts%2F2023-02%2F1676187371_gagaru-club-p-prekrasnaya-ulibka-pinterest-76.jpg&lr=10335",
-            "fullName": "Olim"
-        },
-        "6": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=1&text=person+image&pos=8&type=face&isize=eq&rpt=simage&img_url=https%3A%2F%2Fscontent-hel3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F278861274_315601460713008_9217898633769777853_n.jpg%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dscontent-hel3-1.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3D17KuC58KUB8AX_sv5oh%26edm%3DABfd0MgBAAAA%26ccb%3D7-4%26oh%3D00_AT_00Mn1Hbd3bnnqJ0PLnI-em6S9O3paOc4kQIC_v6WDtA%26oe%3D626F6F87%26_nc_sid%3D7bff83&lr=10335",
-            "fullName": "Muslim"
-        },
-        "7": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=2&text=person+image&pos=19&isize=eq&rpt=simage&img_url=https%3A%2F%2Fwww.theplace2.ru%2Farchive%2Fselena_gomez%2Fimg%2F66%281%29.jpg&lr=10335",
-            "fullName": "Hoshim"
-        },
-        "8": {
-            "imageUrl": "https://yandex.com/images/search?ih=600&iw=500&p=2&text=person+image&pos=11&isize=eq&rpt=simage&img_url=https%3A%2F%2Fcelebs-place.com%2Fgallery%2Fjensen-ackles%2F01~66.jpg&lr=10335",
-            "fullName": "Dilbar"
+      "mnemonic-date": {
+            "1": {
+                "id": 1,
+                "date": "476",
+                "event": "Rimning eng katta guldoni sindirildi"
+            },
+            "2": {
+                "id": 2,
+                "date": "512",
+                "event": "Mahalliy baliqchilar dengiz g'ori topishdi"
+            },
+            "3": {
+                "id": 3,
+                "date": "789",
+                "event": "Shaharning eng katta ko'prigi quladi"
+            },
+            "4": {
+                "id": 4,
+                "date": "923",
+                "event": "Barcha sigirlar bir kechada yo'qolib ketdi"
+            },
+            "5": {
+                "id": 5,
+                "date": "1047",
+                "event": "Qishloq aholisi ulkan tosh haykal yasashdi"
+            },
+            "6": {
+                "id": 6,
+                "date": "1122",
+                "event": "Qishloqda birinchi marta bahorgi gul ochildi"
+            },
+            "7": {
+                "id": 7,
+                "date": "1234",
+                "event": "Hoshim akaning velosipedi buzilib qoldi"
+            },
+            "8": {
+                "id": 8,
+                "date": "1356",
+                "event": "Daraxtlar har yilgidan erta gulladi"
+            },
+            "9": {
+                "id": 9,
+                "date": "1453",
+                "event": "Mahalliy musiqa festivali o‘tkazildi"
+            },
+            "10": {
+                "id": 10,
+                "date": "1532",
+                "event": "Uloq ko'pkari eng katta to'y bo'ldi"
+            },
+            "11": {
+                "id": 11,
+                "date": "1627",
+                "event": "Baliqchilar dengiz yirtqichini tutishdi"
+            },
+            "12": {
+                "id": 12,
+                "date": "1745",
+                "event": "Shahar markazida ulkan mushakbozlik bo‘ldi"
+            },
+            "13": {
+                "id": 13,
+                "date": "1820",
+                "event": "Bir kunda 500 ta ari uyasi paydo bo'ldi"
+            },
+            "14": {
+                "id": 14,
+                "date": "1923",
+                "event": "Maktab o'quvchilari dunyo rekordini o'rnatishdi"
+            },
+            "15": {
+                "id": 15,
+                "date": "2001",
+                "event": "Katta hayvonot bog'i ochildi"
+            },
+            "16": {
+                "id": 16,
+                "date": "2015",
+                "event": "Shaharda katta parvoz ko'rgazmasi bo'lib o'tdi"
+            },
+            "17": {
+                "id": 17,
+                "date": "2023",
+                "event": "Mahalliy teatrda rekord tomosha ko'rsatildi"
+            },
+            "18": {
+                "id": 18,
+                "date": "1034",
+                "event": "Qishloq ahli ilk bor asal yig‘di"
+            },
+            "19": {
+                "id": 19,
+                "date": "1147",
+                "event": "Daryo toshqinidan keyin barcha baliqlar yo'qoldi"
+            },
+            "20": {
+                "id": 20,
+                "date": "1290",
+                "event": "Mahalliy xo'jalikda yong'in bo'ldi"
+            },
+            "21": {
+                "id": 21,
+                "date": "1412",
+                "event": "Eng katta don ombori qurildi"
+            },
+            "22": {
+                "id": 22,
+                "date": "1567",
+                "event": "Katta sport musobaqasi o‘tkazildi"
+            },
+            "23": {
+                "id": 23,
+                "date": "1645",
+                "event": "O'rmonda yangi hayvon turi kashf etildi"
+            },
+            "24": {
+                "id": 24,
+                "date": "1760",
+                "event": "Baliqchilar daryo bo'yida lager qurdilar"
+            },
+            "25": {
+                "id": 25,
+                "date": "1855",
+                "event": "O'rmonda ulkan yong'in bo'ldi"
+            },
+            "26": {
+                "id": 26,
+                "date": "1933",
+                "event": "Shaharda ilk marta avtomobil yarmarkasi bo'lib o'tdi"
+            },
+            "27": {
+                "id": 27,
+                "date": "1987",
+                "event": "Katta konsert bo'lib o'tdi"
+            },
+            "28": {
+                "id": 28,
+                "date": "1999",
+                "event": "Shahar bo'ylab katta yugurish marafoni bo'lib o'tdi"
+            },
+            "29": {
+                "id": 29,
+                "date": "2007",
+                "event": "Mahalliy kutubxonada 10 000 kitob sovg‘a qilindi"
+            },
+            "30": {
+                "id": 30,
+                "date": "2021",
+                "event": "Dunyodagi eng katta sham ishlab chiqarildi"
+            },
+            "31": {
+                "id": 31,
+                "date": "1123",
+                "event": "O'rmondagi eng katta daraxt kesildi"
+            },
+            "32": {
+                "id": 32,
+                "date": "1244",
+                "event": "Qishloqda katta mol bozori ochildi"
+            },
+            "33": {
+                "id": 33,
+                "date": "1378",
+                "event": "Eng katta gul ko'rgazmasi bo'lib o'tdi"
+            },
+            "34": {
+                "id": 34,
+                "date": "1499",
+                "event": "Mahalliy choyxonada yangi choy turi taqdim etildi"
+            },
+            "35": {
+                "id": 35,
+                "date": "1604",
+                "event": "Mahalliy baliqchilar eng katta baliqni tutdilar"
+            },
+            "36": {
+                "id": 36,
+                "date": "1732",
+                "event": "Shahar ko'chalari gullar bilan bezatildi"
+            },
+            "37": {
+                "id": 37,
+                "date": "1821",
+                "event": "O'rmondagi eng katta ariq qurildi"
+            },
+            "38": {
+                "id": 38,
+                "date": "1910",
+                "event": "Mahalliy aholi katta tosh haykal yasadi"
+            },
+            "39": {
+                "id": 39,
+                "date": "1955",
+                "event": "Daryo bo'yida yirik baliq ovlash musobaqasi o'tkazildi"
+            },
+            "40": {
+                "id": 40,
+                "date": "2002",
+                "event": "Mahalliy teatrda ulkan sahnalashtirilgan tomosha bo'ldi"
+            },
+            "41": {
+                "id": 41,
+                "date": "2010",
+                "event": "Shahar ko'chasida ulkan festival bo'lib o'tdi"
+            },
+            "42": {
+                "id": 42,
+                "date": "2025",
+                "event": "Mahalliy bog'da rekord darajada katta daraxt ekildi"
+            },
+            "43": {
+                "id": 43,
+                "date": "1098",
+                "event": "Mahalliy kulol ulkan kulolchilik asarini yaratdi"
+            },
+            "44": {
+                "id": 44,
+                "date": "1185",
+                "event": "Shaharning markazida ulkan favvora qurildi"
+            },
+            "45": {
+                "id": 45,
+                "date": "1307",
+                "event": "Eng katta bog' ochildi"
+            },
+            "46": {
+                "id": 46,
+                "date": "1439",
+                "event": "O‘rmondagi eng katta ko‘l topildi"
+            },
+            "47": {
+                "id": 47,
+                "date": "1542",
+                "event": "Qishloqda ilk bor katta qishloq xo'jaligi yarmarkasi o'tkazildi"
+            },
+            "48": {
+                "id": 48,
+                "date": "1666",
+                "event": "Mahalliy hunarmandlar ulkan yog'och haykal yasashdi"
+            },
+            "49": {
+                "id": 49,
+                "date": "1798",
+                "event": "Shaharning eng katta hayvonot bog'i ochildi"
+            },
+            "50": {
+                "id": 50,
+                "date": "1886",
+                "event": "Mahalliy bozor 1000 yillik yubileyini nishonladi"
+            },
+            "51": {
+                "id": 51,
+                "date": "1943",
+                "event": "Shaharning eng katta ko'chasida yirik savdo markazi ochildi"
+            },
+            "52": {
+                "id": 52,
+                "date": "1992",
+                "event": "Mahalliy maktabda 1000 ta yangi o'quvchi qabul qilindi"
+            },
+            "53": {
+                "id": 53,
+                "date": "2008",
+                "event": "Shaharda katta ekologik aksiyaga start berildi"
+            },
+            "54": {
+                "id": 54,
+                "date": "2017",
+                "event": "Mahalliy muzeyda ulkan tarixiy ko'rgazma o'tkazildi"
+            },
+            "55": {
+                "id": 55,
+                "date": "2022",
+                "event": "Shaharning eng katta futbol stadioni ochildi"
+            },
+            "56": {
+                "id": 56,
+                "date": "1045",
+                "event": "Qishloqda ilk bora katta hashar o'tkazildi"
+            },
+            "57": {
+                "id": 57,
+                "date": "1178",
+                "event": "Mahalliy qishloqda ulkan meva bog'i ochildi"
+            },
+            "58": {
+                "id": 58,
+                "date": "1312",
+                "event": "O‘rmondagi eng katta qush topildi"
+            },
+            "59": {
+                "id": 59,
+                "date": "1457",
+                "event": "Shaharning eng katta bozori ochildi"
+            },
+            "60": {
+                "id": 60,
+                "date": "1583",
+                "event": "Mahalliy baliqchilar ulkan to'r topishdi"
+            },
+            "61": {
+                "id": 61,
+                "date": "1694",
+                "event": "Shaharda ilk bora katta qor festivali o'tkazildi"
+            },
+            "62": {
+                "id": 62,
+                "date": "1810",
+                "event": "Mahalliy qishloqda ulkan meva bog'i ochildi"
+            },
+            "63": {
+                "id": 63,
+                "date": "1901",
+                "event": "O‘rmondagi eng katta daryo topildi"
+            },
+            "64": {
+                "id": 64,
+                "date": "1950",
+                "event": "Mahalliy ko'lda katta baliq ovlash musobaqasi o'tkazildi"
+            },
+            "65": {
+                "id": 65,
+                "date": "1983",
+                "event": "Shaharda ilk bora katta gul ko'rgazmasi o'tkazildi"
+            },
+            "66": {
+                "id": 66,
+                "date": "1997",
+                "event": "Mahalliy bog'da ulkan dam olish maskani ochildi"
+            },
+            "67": {
+                "id": 67,
+                "date": "2004",
+                "event": "Shahar markazida yirik savdo markazi ochildi"
+            },
+            "68": {
+                "id": 68,
+                "date": "2018",
+                "event": "Mahalliy stadionda ulkan konsert bo'lib o'tdi"
+            },
+            "69": {
+                "id": 69,
+                "date": "2026",
+                "event": "Shaharda eng katta yodgorlik ochildi"
+            },
+            "70": {
+                "id": 70,
+                "date": "1075",
+                "event": "Qishloqda ilk bora katta to'y bo'lib o'tdi"
+            },
+            "71": {
+                "id": 71,
+                "date": "1193",
+                "event": "Mahalliy maktabda katta sport musobaqasi o'tkazildi"
+            },
+            "72": {
+                "id": 72,
+                "date": "1333",
+                "event": "O‘rmondagi eng katta daraxt topildi"
+            },
+            "73": {
+                "id": 73,
+                "date": "1466",
+                "event": "Shaharning eng katta ko'prigi qurildi"
+            },
+            "74": {
+                "id": 74,
+                "date": "1574",
+                "event": "Mahalliy kulol ulkan vaz yaratdi"
+            },
+            "75": {
+                "id": 75,
+                "date": "1689",
+                "event": "Shaharda ilk bora katta suv festivali o'tkazildi"
+            },
+            "76": {
+                "id": 76,
+                "date": "1824",
+                "event": "Mahalliy baliqchilar ulkan daryo baliqlarini tutishdi"
+            },
+            "77": {
+                "id": 77,
+                "date": "1908",
+                "event": "Shaharning eng katta bog'i ochildi"
+            },
+            "78": {
+                "id": 78,
+                "date": "1957",
+                "event": "Mahalliy aholi ulkan daraxtni kesdi"
+            },
+            "79": {
+                "id": 79,
+                "date": "1980",
+                "event": "Shaharda katta gul ko'rgazmasi bo'lib o'tdi"
+            },
+            "80": {
+                "id": 80,
+                "date": "1995",
+                "event": "Mahalliy maktabda 1000 ta yangi o'quvchi qabul qilindi"
+            },
+            "81": {
+                "id": 81,
+                "date": "2003",
+                "event": "Shahar bo'ylab katta ekologik aksiyaga start berildi"
+            },
+            "82": {
+                "id": 82,
+                "date": "2019",
+                "event": "Mahalliy muzeyda ulkan tarixiy ko'rgazma o'tkazildi"
+            },
+            "83": {
+                "id": 83,
+                "date": "2027",
+                "event": "Shaharning eng katta futbol stadioni ochildi"
+            },
+            "84": {
+                "id": 84,
+                "date": "1054",
+                "event": "Qishloqda ilk bora katta hashar o'tkazildi"
+            },
+            "85": {
+                "id": 85,
+                "date": "1172",
+                "event": "Mahalliy qishloqda ulkan meva bog'i ochildi"
+            },
+            "86": {
+                "id": 86,
+                "date": "1318",
+                "event": "O‘rmondagi eng katta qush topildi"
+            },
+            "87": {
+                "id": 87,
+                "date": "1450",
+                "event": "Shaharning eng katta bozori ochildi"
+            },
+            "88": {
+                "id": 88,
+                "date": "1588",
+                "event": "Mahalliy baliqchilar ulkan to'r topishdi"
+            },
+            "89": {
+                "id": 89,
+                "date": "1697",
+                "event": "Shaharda ilk bora katta qor festivali o'tkazildi"
+            },
+            "90": {
+                "id": 90,
+                "date": "1815",
+                "event": "Mahalliy qishloqda ulkan meva bog'i ochildi"
+            },
+            "91": {
+                "id": 91,
+                "date": "1904",
+                "event": "O‘rmondagi eng katta daryo topildi"
+            },
+            "92": {
+                "id": 92,
+                "date": "1951",
+                "event": "Mahalliy ko'lda katta baliq ovlash musobaqasi o'tkazildi"
+            },
+            "93": {
+                "id": 93,
+                "date": "1984",
+                "event": "Shaharda ilk bora katta gul ko'rgazmasi o'tkazildi"
+            },
+            "94": {
+                "id": 94,
+                "date": "1996",
+                "event": "Mahalliy bog'da ulkan dam olish maskani ochildi"
+            },
+            "95": {
+                "id": 95,
+                "date": "2005",
+                "event": "Shahar markazida yirik savdo markazi ochildi"
+            },
+            "96": {
+                "id": 96,
+                "date": "2020",
+                "event": "Mahalliy stadionda ulkan konsert bo'lib o'tdi"
+            },
+            "97": {
+                "id": 97,
+                "date": "2028",
+                "event": "Shaharda eng katta yodgorlik ochildi"
+            },
+            "98": {
+                "id": 98,
+                "date": "1070",
+                "event": "Qishloqda ilk bora katta to'y bo'lib o'tdi"
+            },
+            "99": {
+                "id": 99,
+                "date": "1203",
+                "event": "Mahalliy maktabda katta sport musobaqasi o'tkazildi"
+            },
+            "100": {
+                "id": 100,
+                "date": "1351",
+                "event": "O‘rmondagi eng katta daraxt topildi"
+            }
         }
-    }
 }
 

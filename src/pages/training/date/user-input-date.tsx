@@ -16,8 +16,8 @@ import { Input } from "@/components/ui/input";
 import { processFinished } from "@/redux/slice/training.slice";
 import Clock from '@/components/clock/clcok';
 
-export default function InputWords() {
-    const { randomWords, systemTime } = useSelector((state: RootState) => state.training);
+export default function UserInputDate() {
+    const { randomDates, systemTime } = useSelector((state: RootState) => state.training);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     
@@ -31,20 +31,20 @@ export default function InputWords() {
     };
 
     const handleSubmit = () => {
-        const finishedWords = randomWords.map((word, index) => ({
-            translation: word.dictionary,
-            dictionary: inputValues[index] || ""
+        const finishedWords = randomDates.map((word, index) => ({
+            translation: word.id,
+            date: inputValues[index] || ""
         }));
         
         dispatch(processFinished({
-            userInputWords: finishedWords
+            userInputDates: finishedWords
         }));
-        navigate('/dashboard/training/words/check');
+        navigate('/dashboard/training/date/check', { replace: true });
     };
 
     return (
         <div>
-            <Clock route={'/dashboard/training/face/check'} time={systemTime}/>
+            <Clock route={'/dashboard/training/date/checkt'} time={systemTime}/>
             <Table>
                 <TableCaption>
                     <Button onClick={handleSubmit}>Finish</Button>
@@ -52,22 +52,23 @@ export default function InputWords() {
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-4">Tr</TableHead>
-                        <TableHead className="">So'z</TableHead>
-                        <TableHead className="">Tarjima</TableHead>
+                        <TableHead className="">Sana</TableHead>
+                        <TableHead className="">Hodisa</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    {randomWords.map((item, index) => {
+                    {randomDates.map((item, index) => {
                         return (
                             <TableRow key={index}>
                                 <TableCell className="">{index + 1}</TableCell>
-                                <TableCell className="w-1/2">{item.translation}</TableCell>
-                                <TableCell className="w-1/2">
+                                <TableCell className="w-[140px]">
                                     <Input 
+                                        type='number'
                                         value={inputValues[index] || ""}
                                         onChange={(e) => handleInputChange(index, e.target.value)}
                                     />
                                 </TableCell>
+                                <TableCell className="">{item.event}</TableCell>
                             </TableRow>
                         );
                     })}

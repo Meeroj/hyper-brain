@@ -1,3 +1,4 @@
+import Clock from '@/components/clock/clcok';
 import { Input } from '@/components/ui/input';
 import { processFinished } from '@/redux/slice/training.slice';
 import { RootState } from '@/redux/store';
@@ -7,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SpeedNumberLook: React.FC = () => {
   const dispatch = useDispatch();
-  const { randomNumbers } = useSelector((state: RootState) => state.training);
+  const { randomNumbers, systemTime } = useSelector((state: RootState) => state.training);
   const navigate = useNavigate();
 
   const handleChange = useCallback((index: number, e: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,12 +36,13 @@ const SpeedNumberLook: React.FC = () => {
       userInputTime: 15
     }));
     console.log(getNumberArray())
-    navigate('/dashboard/training/number/check');
+    navigate('/dashboard/training/number/check', {replace: true});
 
   }, [dispatch, getNumberArray, navigate]);
 
   return (
     <div className="flex items-center flex-col pt-3">
+      <Clock route={'/dashboard/training/face/check'} time={systemTime}/>
       <h2 className="text-3xl">Speed Number</h2>
         <div className="flex flex-wrap 2xl:grid grid-cols-40 grid-rows-15 gap-1 w-[95%] font-[oswald]  bg-[hsl(var(--sidebar-bg))] text-[hsl(var(--sidebar-foreground))] my-10 p-5  h-full rounded-2xl">
           {randomNumbers.map((_, index) => (

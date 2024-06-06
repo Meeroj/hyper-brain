@@ -9,6 +9,7 @@ import { RootState } from '@/redux/store';
 import { Button } from '@/components/ui/button';
 import { processFinished } from '@/redux/slice/training.slice';
 import { useNavigate } from 'react-router-dom';
+import Clock from '@/components/clock/clcok';
 
 // Define types for cardItems
 interface CardItem {
@@ -17,7 +18,7 @@ interface CardItem {
 }
 
 const UserInputName: React.FC = () => {
-  const { randomFaces } = useSelector((state: RootState) => state.training);
+  const { randomFaces, systemTime } = useSelector((state: RootState) => state.training);
   const [inputValues, setInputValues] = useState<{ [key: number]: { correctName: string, userInputName: string } }>({});
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -44,11 +45,12 @@ const UserInputName: React.FC = () => {
     dispatch(processFinished({
       userInputNames: inputValues
     }));
-    navigate('/dashboard/training/face/check');
+    navigate('/dashboard/training/face/check', { replace: true });
   };
 
   return (
     <div className="flex h-screen">
+      <Clock route={'/dashboard/training/face/check'} time={systemTime}/>
       <div className="flex-grow flex flex-col justify-center items-center gap-10 p-4">
         <Swiper
           effect={'cards'}

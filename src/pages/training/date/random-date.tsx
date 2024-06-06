@@ -18,11 +18,9 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
 
 interface MnemonicWord {
-    dictionary: string;
-    transcription: string;
-    translation: string;
-    association: string;
-    dependentCondition: string;
+    id: number;
+    date: string;
+    event: string;
 }
 
 // Capitalize funksiyasi
@@ -31,13 +29,13 @@ function capitalize(word: string): string {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-export default function RandomWords() {
-    const words: { [key: string]: MnemonicWord } = data['mnemonic-words'];
+export default function RandomDate() {
+    const date: { [key: string]: MnemonicWord } = data['mnemonic-date'];
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [randomKeys, setRandomKeys] = useState<string[]>([]);
-    const {systemTime} = useSelector((state: RootState) => state.training)
+    const {systemTime} = useSelector((state: RootState)=> state.training)
 
     // Tasodifiy 30 ta kalit tanlash
     const getRandomKeys = (arr: string[], num: number): string[] => {
@@ -46,13 +44,14 @@ export default function RandomWords() {
     };
 
     useEffect(() => {
-        const keys = getRandomKeys(Object.keys(words), 30);
+        const keys = getRandomKeys(Object.keys(date), 30);
         setRandomKeys(keys);
-        const wordList = keys.map(key => words[key]);
+        const dateList = keys.map(key => date[key]);
+        console.log(dateList)
         dispatch(processStarted({
-            randomWords: wordList
+            randomDates: dateList
         }));
-    }, [dispatch, words]);
+    }, [dispatch, date]);
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
@@ -72,14 +71,14 @@ export default function RandomWords() {
     }, [randomKeys]);
 
     const handleFinish = () => {
-        navigate('/dashboard/training/words/user-input');
+        navigate('/dashboard/training/date/user-input', { replace: true });
     }
 
-    const currentWord = randomKeys.length > 0 ? words[randomKeys[currentWordIndex]] : null;
+    const currentWord = randomKeys.length > 0 ? date[randomKeys[currentWordIndex]] : null;
 
     return (
         <div>
-            <Clock route={'/dashboard/training/face/user-input'} time={systemTime}/>
+            <Clock route={'/dashboard/training/date/user-input'} time={systemTime}/>
             <Table>
                 <TableCaption>
                     <Button onClick={handleFinish}>Finish</Button>
@@ -93,12 +92,12 @@ export default function RandomWords() {
                 </TableHeader>
                 <TableBody>
                     {randomKeys.map((key, index) => {
-                        const word = words[key];
+                        const word = date[key];
                         return (
                             <TableRow key={key}>
                                 <TableCell className="">{index + 1}</TableCell>
-                                <TableCell className="w-1/2">{capitalize(word.translation)}</TableCell>
-                                <TableCell className="w-1/2">{word.dictionary}</TableCell>
+                                <TableCell className="">{capitalize(word.date)}</TableCell>
+                                <TableCell className="">{word.event}</TableCell>
                             </TableRow>
                         );
                     })}
@@ -110,8 +109,8 @@ export default function RandomWords() {
                         <TableBody>
                             <TableRow>
                                 <TableCell className="w-[4%] text-center backdrop-blur-md bg-green-400/20 rounded-l-2xl text-2xl">{currentWordIndex + 1}</TableCell>
-                                <TableCell className="w-1/2 text-center backdrop-blur-md bg-green-400/10 text-2xl">{capitalize(currentWord.translation)}</TableCell>
-                                <TableCell className="w-1/2 text-center backdrop-blur-md bg-sky-500/10 rounded-r-2xl text-2xl">{currentWord.dictionary}</TableCell>
+                                <TableCell className="w-1/2 text-center backdrop-blur-md bg-green-400/10 text-2xl">{capitalize(currentWord.date)}</TableCell>
+                                <TableCell className="w-1/2 text-center backdrop-blur-md bg-sky-500/10 rounded-r-2xl text-2xl">{currentWord.event}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>

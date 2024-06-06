@@ -2,10 +2,16 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/redux/store';
 import { Ban, Check } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 export default function CheckFace() {
     const {randomFaces, userInputNames} = useSelector((state:RootState) => state.training)
-    console.log(userInputNames)
+    const navigate = useNavigate()
+    const handleBack = ()=>{
+      navigate(-1)
+    }
   return (
+    <div className='flex flex-col items-center justify-betweenr gap-5'>
     <div className='grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-3'>
         {randomFaces.map((item, index)=>{
             const isEqualize = item.name.toLowerCase() !== userInputNames[index].userInputName.toLowerCase()
@@ -23,6 +29,8 @@ export default function CheckFace() {
                 </Card>
             )
         })}
+    </div>
+        <Button onClick={handleBack}>Go Back</Button>
     </div>
   )
 }

@@ -19,6 +19,11 @@ interface TUserInputNames{
   correctName: string,
   userInputName: string
 }
+interface TRandomDates{
+  date: string
+  event: string
+  id: number
+}
 // Define the state type
 interface INumberState {
   randomNumbers: number[];
@@ -27,6 +32,8 @@ interface INumberState {
   userInputWords: TUserIpnutWords[]
   randomFaces: TFaceAndNames[]
   userInputNames: TUserInputNames[]
+  randomDates: TRandomDates[]
+  userInputDates: TRandomDates[]
   userReadTime: number
   isProcess: boolean;
   systemTime: number;
@@ -42,6 +49,8 @@ const initialState: INumberState = {
   userInputWords: [],
   randomFaces: [],
   userInputNames: [],
+  randomDates: [],
+  userInputDates: [],
   userReadTime: 0,
   isProcess: false,
   systemTime: 0,
@@ -62,6 +71,7 @@ export const numberSlice = createSlice({
       state.randomNumbers = action.payload.randomNumbers ? action.payload.randomNumbers : []
       state.randomWords = action.payload.randomWords ? action.payload.randomWords : []
       state.randomFaces = action.payload.randomFaces ? action.payload.randomFaces : []
+      state.randomDates = action.payload.randomDates ? action.payload.randomDates : []
     },
     userReadFinishing: (state, action)=>{
       state.userReadTime = action.payload
@@ -71,6 +81,7 @@ export const numberSlice = createSlice({
       state.userInputNumbers = action.payload.userInputNumbers ? action.payload.userInputNumbers : []
       state.userInputWords = action.payload.userInputWords ? action.payload.userInputWords : []
       state.userInputNames = action.payload.userInputNames ? action.payload.userInputNames : []
+      state.userInputDates = action.payload.userInputDates ? action.payload.userInputDates : []
       state.userInputTime = action.payload.userInputTime
     },
   },

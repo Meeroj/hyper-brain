@@ -27,8 +27,25 @@ import CheckFace from './pages/training/face-and-name/check-face.tsx'
 import RandomCard from './pages/training/card/random-card.tsx'
 import UserInputCard from './pages/training/card/user-input-card.tsx'
 import CheckCard from './pages/training/card/check-card.tsx'
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+import RandomDate from './pages/training/date/random-date.tsx'
+import UserInputDate from './pages/training/date/user-input-date.tsx'
+import CheckDate from './pages/training/date/check-date.tsx'
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDvPB_g2by5UegilbOOgfjnxZqyL1u86Go",
+  authDomain: "hyper-brain.firebaseapp.com",
+  projectId: "hyper-brain",
+  storageBucket: "hyper-brain.appspot.com",
+  messagingSenderId: "239644096901",
+  appId: "1:239644096901:web:03ba3562536885874aacec",
+  measurementId: "G-F0GG5R2CK0"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 const router = createBrowserRouter([
   {
@@ -126,6 +143,24 @@ const router = createBrowserRouter([
                 element: <CheckCard/>
               }
             ]
+          },
+          {
+            path: 'date',
+            element: <Outlet/>,
+            children: [
+              {
+                path: 'read',
+                element: <RandomDate/>
+              },
+              {
+                path: 'user-input',
+                element: <UserInputDate/>
+              },
+              {
+                path: 'check',
+                element: <CheckDate/>
+              }
+            ]
           }
         ]
       },
@@ -149,7 +184,6 @@ const router = createBrowserRouter([
   }
 ])
 
-
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
@@ -160,9 +194,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
      <ThemeProvider>
       <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <DndProvider backend={HTML5Backend}>
         <RouterProvider router={router}/>
-      </DndProvider>
       </ClerkProvider>
      </ThemeProvider>
   </Provider>

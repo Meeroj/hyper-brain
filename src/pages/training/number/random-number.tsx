@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { processStarted, userReadFinishing } from '@/redux/slice/training.slice';
 import { RootState } from '@/redux/store';
 import { useNavigate } from 'react-router-dom';
+import Clock from '@/components/clock/clcok';
 
 
 
@@ -54,7 +55,7 @@ const SpeedNumberLook = () => {
 
   const handleFinish = () => {
     dispatch(userReadFinishing(5))
-    navigate('/dashboard/training/number/user-input')
+    navigate('/dashboard/training/number/user-input', { replace: true })
   };
 
   const handleNext = () => {
@@ -62,6 +63,7 @@ const SpeedNumberLook = () => {
   };
   return (
     <div>
+      <Clock route={'/dashboard/training/number/user-input'} time={systemTime}/>
       <div className='flex items-center flex-col pt-3'>
         <h2 className='text-3xl font-[oswald]'>Speed Number {systemTime}minut</h2>
           <div className="flex flex-wrap xl:grid grid-cols-40 grid-rows-15 w-full md:w-[90%] font-[oswald]  bg-[hsl(var(--sidebar-bg))] text-[hsl(var(--sidebar-foreground))] my-20 p-2 lg:p-10 h-full rounded-2xl" onClick={handleNext}>
