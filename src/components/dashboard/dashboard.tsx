@@ -3,8 +3,37 @@ import Chart from "react-apexcharts";
 import RadialBarChart from "./circular-progress";
 import FirebaseDataFetcher from "@/firebase/FirebaseDataFetcher";
 
-class DashboardLayout extends Component {
-  constructor(props) {
+// Define the interface for the chart options
+interface ChartOptions {
+  chart: {
+    id: string;
+  };
+  xaxis: {
+    categories: number[];
+  };
+  colors: string[];
+}
+
+// Define the interface for the series data
+interface SeriesData {
+  name: string;
+  data: number[];
+}
+
+// Define the interface for the fetched data
+interface FetchedData {
+  correctNumbers: Record<string, number[]>;
+}
+
+// Define the state interface
+interface DashboardState {
+  options: ChartOptions;
+  series: SeriesData[];
+  fetchedData: FetchedData | null;
+}
+
+class DashboardLayout extends Component<{}, DashboardState> {
+  constructor(props: {}) {
     super(props);
     const numbers = Array.from({ length: 30 }, (_, i) => i + 1);
 
@@ -28,10 +57,10 @@ class DashboardLayout extends Component {
     };
   }
 
-  handleFetchData = (data) => {
+  handleFetchData = (data: FetchedData) => {
     // Parse the fetched data to get the series data
     const seriesData = Object.values(data.correctNumbers).flat();
-    
+
     // Update the state with fetched data
     this.setState({
       series: [
@@ -55,11 +84,11 @@ class DashboardLayout extends Component {
               series={this.state.series}
               type="bar"
               width="1300"
-              height='500'
+              height="500"
             />
           </div>
         </div>
-        <div className="w-1/4 ms-2 p-2 rounded-md border border-slate-500/20 ">
+        <div className="w-1/4 ms-2 p-2 rounded-md border border-slate-500/20">
           <RadialBarChart label="Words" progress={87} />
           <RadialBarChart label="Numbers" progress={76} />
           <RadialBarChart label="Cards" progress={68} />
@@ -70,4 +99,3 @@ class DashboardLayout extends Component {
 }
 
 export default DashboardLayout;
-
