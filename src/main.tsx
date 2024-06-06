@@ -31,6 +31,7 @@ import RandomDate from './pages/training/date/random-date.tsx'
 import UserInputDate from './pages/training/date/user-input-date.tsx'
 import CheckDate from './pages/training/date/check-date.tsx'
 import './firebaseConfig.ts'
+import { Analytics } from '@vercel/analytics/react';
 
 const router = createBrowserRouter([
   {
@@ -184,6 +185,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
      <ThemeProvider>
       <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
         <RouterProvider router={router}/>
+        <Analytics />
       </ClerkProvider>
      </ThemeProvider>
   </Provider>
