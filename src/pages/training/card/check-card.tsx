@@ -1,6 +1,9 @@
 
 export default function CheckCard() {
   return (
-    <div>CheckCard</div>
+    <div>
+      CheckCard
+      
+    </div>
   )
 }

@@ -2,12 +2,15 @@ import { db } from "@/firebaseConfig";
 import { collection, doc, getDoc } from "firebase/firestore";
 import { useUser } from "@clerk/clerk-react";
 import { useState, useEffect } from "react";
+import Loading from "@/components/Loading";
 
 interface FirebaseDataFetcherProps {
   onFetch: (data: any) => void;
 }
 
-const FirebaseDataFetcher: React.FC<FirebaseDataFetcherProps> = ({ onFetch }) => {
+const FirebaseDataFetcher: React.FC<FirebaseDataFetcherProps> = ({
+  onFetch,
+}) => {
   const { user } = useUser();
   const [loading, setLoading] = useState(true);
 
@@ -15,8 +18,8 @@ const FirebaseDataFetcher: React.FC<FirebaseDataFetcherProps> = ({ onFetch }) =>
     const fetchData = async () => {
       try {
         if (user) {
-          const nickname = user.username || user.firstName || 'Unknown';
-          const docRef = doc(collection(db, 'speedNumber'), nickname);
+          const nickname = user.username || user.firstName || "Unknown";
+          const docRef = doc(collection(db, "speedNumber"), nickname);
 
           const docSnap = await getDoc(docRef);
 
@@ -40,7 +43,7 @@ const FirebaseDataFetcher: React.FC<FirebaseDataFetcherProps> = ({ onFetch }) =>
   }, [user, onFetch]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   return null;

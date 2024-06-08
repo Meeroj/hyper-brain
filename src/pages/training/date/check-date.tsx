@@ -33,8 +33,8 @@ export default function CheckDate() {
         <TableHeader>
           <TableRow>
             <TableHead className="w-4 rounded-s-xl">Tr</TableHead>
-            <TableHead className="">So'z</TableHead>
-            <TableHead className="rounded-e-xl">Tarjima</TableHead>
+            <TableHead className="">Yil</TableHead>
+            <TableHead className="rounded-e-xl">Hodisa</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

@@ -86,8 +86,8 @@ export default function RandomDate() {
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-4">Tr</TableHead>
-                        <TableHead className="">So'z</TableHead>
-                        <TableHead className="">Tarjima</TableHead>
+                        <TableHead className="">Yil</TableHead>
+                        <TableHead className="">Hodisa</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>

@@ -30,9 +30,6 @@ import CheckCard from './pages/training/card/check-card.tsx'
 import RandomDate from './pages/training/date/random-date.tsx'
 import UserInputDate from './pages/training/date/user-input-date.tsx'
 import CheckDate from './pages/training/date/check-date.tsx'
-import './firebaseConfig.ts'
-import { Analytics } from '@vercel/analytics/react';
-
 const router = createBrowserRouter([
   {
     path: `/`,
@@ -45,10 +42,6 @@ const router = createBrowserRouter([
       {
         path: 'home',
         element: <DashboardLayout/>
-      },
-      {
-        path: '*',
-        element: <Navigate to={'/dashboard/home'}/>
       },
       {
         path: 'training', 
@@ -126,7 +119,7 @@ const router = createBrowserRouter([
               },
               {
                 path: 'user-input',
-                element: <UserInputCard/>
+                element:<UserInputCard/>
               },
               {
                 path: 'check',
@@ -144,7 +137,7 @@ const router = createBrowserRouter([
               },
               {
                 path: 'user-input',
-                element: <UserInputDate/>
+                element:<UserInputDate/>
               },
               {
                 path: 'check',
@@ -174,6 +167,7 @@ const router = createBrowserRouter([
   }
 ])
 
+
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
@@ -185,7 +179,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
      <ThemeProvider>
       <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
         <RouterProvider router={router}/>
-        <Analytics />
       </ClerkProvider>
      </ThemeProvider>
   </Provider>
