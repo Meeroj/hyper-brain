@@ -7,6 +7,7 @@ interface User {
   isBattleAllow: boolean;
   image: string;
   isOnline: boolean;
+  haveBattle: boolean;
   battleResult: { number: number };
 }
 

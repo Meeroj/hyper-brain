@@ -3,10 +3,19 @@ import { ref, set, onValue, get } from "firebase/database";
 import { realtimeDB } from "@/firebaseConfig";
 import { useUser } from "@clerk/clerk-react";
 
+interface User {
+  username: string;
+  isBattleAllow: boolean;
+  image: string;
+  isOnline: boolean;
+  haveBattle: boolean;
+  battleResult: { number: number };
+}
+
 export const useBattle = () => {
   const { user } = useUser();
   const [isBattleAllow, setIsBattleAllow] = useState(false);
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     if (user) {
@@ -56,6 +65,7 @@ export const useBattle = () => {
         isBattleAllow: false,
         image: user.imageUrl,
         isOnline: false,
+        haveBattle: false,
         battleResult: { number: 0 },
       });
 
@@ -64,7 +74,7 @@ export const useBattle = () => {
     }
   };
 
-  const handleButtonClick = async (calledUser) => {
+  const handleButtonClick = async (calledUser: User) => {
     if (user) {
       const ownerUsername = user.username || user.id;
       const calledUsername = calledUser.username;
@@ -77,18 +87,18 @@ export const useBattle = () => {
         },
         calledUsername: {
           calledUsername,
-          image: user.imageUrl,
+          image: calledUser.image,
           battleResult: { number: 0 },
         },
       });
 
       await set(
         ref(realtimeDB, `Battle/users/${ownerUsername}/haveBattle`),
-        calledUser
+        true
       );
       await set(
         ref(realtimeDB, `Battle/users/${calledUsername}/haveBattle`),
-        ownerUsername
+        true
       );
 
       setIsBattleAllow(true);
@@ -105,6 +115,7 @@ export const useBattle = () => {
         isBattleAllow: false,
         image: user.imageUrl,
         isOnline: true,
+        haveBattle: true,
         battleResult: { number: 0 },
       });
 

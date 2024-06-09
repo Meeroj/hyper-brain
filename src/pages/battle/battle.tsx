@@ -1,8 +1,9 @@
+import { FC } from "react";
 import UserList from "./UserList";
 import BattleButtons from "./BattleButtons";
 import { useBattle } from "@/hooks/useBattle";
 
-export default function Battle() {
+const Battle: FC = () => {
   const {
     isBattleAllow,
     users,
@@ -26,4 +27,6 @@ export default function Battle() {
       />
     </div>
   );
-}
+};
+
+export default Battle;
